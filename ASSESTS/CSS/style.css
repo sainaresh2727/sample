@@ -1,0 +1,317 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+     background-color: #d8d8f7;
+}
+/* =====================LOGIN PAGE CSS STARTS=================== */
+
+.login{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+#close{
+    display: none;
+}
+#box-1{
+    box-shadow: 0px 0px 20px grey;
+}
+/* =====================LOGIN PAGE CSS ENDS=================== */
+/*===================== HEADER CSS STARTS====================== */
+.header{
+   background: linear-gradient(135deg, #E0F7FF, #9e9ef7, #E0F7FF );
+    padding: 2px;
+    position: sticky;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+.nav-link{
+    position: relative;
+}
+.nav-link::before{
+    content:'';
+    position: absolute;
+    background-color: black;
+    width: 0px;
+    height: 2px;
+    
+    bottom: 0px;
+    transition: 2s;
+} 
+.nav-link:hover::before{
+    height: 2px;
+    width: 100%;
+    transition: 2s;
+    border-radius: 10px;
+}
+#purchase{
+    background-color: red;
+    color: white;
+}
+.img>img{
+    height: 128px;
+}
+.icons{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+#count{
+    background-color: red;
+    border-radius: 20px;
+}
+
+/*===================== HEADER CSS ENDS====================== */
+
+/* =============BODY BG CSS STARTS STARTS==================== */
+#body-bg{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../IMAGES/photo_2025-06-05_20-47-39.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+   
+    image-rendering: auto;
+}
+#body-bg-content{
+    padding-top: 170px;
+   
+}
+#body-bg-content>h4{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 40px;
+    line-height: 70px;
+    color: white;
+    font-weight: normal;
+    
+}
+#body-bg-content>p{
+    font-family: "Josefin Sans";
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 40px;
+    color: white;
+    margin-top: 20px;
+    
+}
+#body-bg-content>a{
+    width: 150px;
+    background-color: white;
+    color: red;
+    margin-top: 20px;
+}
+.socialMedia{
+    margin-top: 20px;
+    display: flex;
+    gap: 18px;
+}
+.socialMedia>a>i{
+    font-size: 20px;
+    color: white;
+}
+/* =========== MEDIA QUERY=============  */
+@media  (max-width:800px) {
+#body-bg-content{
+    padding-top: 180px;
+    
+}
+#body-bg-content>h4{
+    font-size: 20px;
+    line-height:35px;
+    width: 100%;
+    font-weight: bold;
+    
+}
+#body-bg-content>p{
+    font-weight:bold;
+    font-size: 15px;
+    line-height: 25px;
+    width: 100%;
+    margin-top: 20px;
+}
+#body-bg-content>a{
+    width: 150px;
+    margin-top: 20px;
+}
+.socialMedia>a>i{
+    font-size: 15px;
+}
+}
+/* =============BODY BG CSS STARTS ENDS==================== */
+/* ==============ABOUTB US CSS STARTS============ */
+#about{
+    
+}
+#img-2>img{
+    height: 230px;
+}
+#aboutUsContent>h3{
+    font-weight: bold;
+    color: #4040ee;
+}
+#aboutUsContent>h4{
+    color: #3636f8;
+    font-weight: bold;
+    margin-top: 15px;
+}
+#aboutUsContent>p{
+    line-height: 30px;
+    color: #6f6ff7;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: justify;
+    margin-top: 15px;
+}
+
+/* ==============ABOUTB US CSS ENDS============ */
+/* =============BRAND CSS STARTS================= */
+
+.logo{
+    margin-right: 25px;
+}
+#brandcontent>h2{
+    color: #3636f8;
+}
+#brandcontent>h3,h5{
+    color: #6f6ff7;
+}
+.btn-3{
+    text-align: center;
+}
+#btn-1{
+    background-color: red;
+    color: white;
+    width: 200px;
+    margin-top: 20px;
+    }
+
+/* =============BRAND CSS ENDS================= */
+/* ========CLIENTS CSS STARTS======= */
+#client{
+    margin-top: 55px;
+}
+#cart{
+    width: 330px;
+    /* padding: 20px; */
+}
+#clientsReview{
+    color: #4040ee;
+    font-family: "Josefin Sans";
+    letter-spacing: 3px; 
+}
+.img-4{
+    width: 100%;
+    /* border-radius: 60px; */
+}
+.card-text{
+   color:#6464f7;
+   text-align: justify;
+   font-weight: bold;
+   font-family: "Josefin Sans";
+}
+.card-title{
+    text-align: center;
+    font-family: "Josefin Sans";
+}
+/* ========CLIENTS CSS ENDS======= */
+/* ========CONTACT CSS STARTS======== */
+#contact-us{
+    margin-top: 55px;
+}
+#contact-titile{
+    font-family: 'Josefin Sans';
+    color: #4040ee;
+    letter-spacing: 3px; 
+}
+#send{
+text-align: center;
+}
+#send>a{
+    background-color: red;
+    color: white;
+    width: 200px;
+}
+#contact-cart{
+    box-shadow: 0px 0px 20px grey;
+}
+/* ========CONTACT CSS ENDS======== */
+/* ========FOOTER CSS STARTS======== */
+#footer{
+    margin-top: 55px;
+    background-color: #6f6ff7;
+}
+.hrline{
+    height: 40px;
+    background-color: black;
+    padding: 2px;
+}
+#footer-socialmedia{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+#footer-socialmedia>a>i{
+    font-size: 20px;
+    color: black;
+}
+#copyrights{
+    background-color:#9e9ef7;
+    color: black;
+}
+/* ========FOOTER CSS ENDS======== */
+/* =======PRODUCT HTML CSS STARTS=====*/
+
+#card-mobile>img{
+  height: 220px; 
+  object-fit: cover;
+ }
+ #cart-laptop>img{
+  height: 220px; 
+  object-fit: cover;
+ }
+ 
+/* ====PRODUCT HTML CSS ENDS=== */
+
+#sai>img{
+height: 220px; 
+object-fit: cover;
+}
+#leo>img{
+height: 220px; 
+object-fit: cover;
+}
+#mobilePhonescon>h2{
+    color: #4040ee;
+    letter-spacing: 3px;
+    font-family: 'Josefin Sans';
+}
+
+#card-mobile{
+    overflow: hidden;
+    
+}
+#card-mobile>img{
+    overflow: hidden;
+    transition: 2s;
+}
+#card-mobile>img:hover{
+    transform: scale(1.2)
+}
+
+#cart-laptop{
+    overflow: hidden;
+    
+}
+#cart-laptop>img{
+    overflow: hidden;
+    transition: 2s;
+}
+#cart-laptop>img:hover{
+    transform: scale(1.2)
+}
